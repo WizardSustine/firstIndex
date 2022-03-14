@@ -1,7 +1,338 @@
-<doctype HTML!>
-<HTML>
-<head>
-<meta author="Juan Gabriel Bustamante">
-</head>
-<body></body>
-</HTML>
+<!DOCTYPE html>
+<html id="init" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="copyright" content="Juan Gabriel Bustamante">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>"Mi sitio web"</title>
+    </head>
+    <body>
+        <header id="inicio">
+            <!---->
+            <div class="drop">
+                <button class="menu" onclick="dropListOfButtons()"> 
+                    <p class="es">Lenguaje</p>
+                    <p class="en">Language</p>
+                    <img src="arrow.png" style="width: 1em; float:right;">
+                </button>
+                <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherEN()">
+                    <p>English</p>
+                    <img src="United-Kingdom-flag.png" style="width: 1.7em; float:right;">
+                </button>
+                <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherES()">
+                    <p>Español</p>
+                    <img src="España-flag.png" style="width: 1.7em; float:right;">
+                </button>
+              </div>
+        </header>
+        <nav>
+            <div><ul class="es">
+                <li><a href=#Datosfi>Datos filiatorios</a></li>
+                <li><a href=#Formacion>Formación académica</a></li>
+                <li><a href=#Experiencia>Experiencia laboral</a></li>
+                <li><a href=#Acercade>Sobre mí</a></li>
+                <li><a href=formulario.html>Contactame:</a></li>
+			</ul>
+			<ul class="en">
+				<li><a href=#Data>Personal data</a></li>
+                <li><a href=#Knowledge>Academic Knowledge</a></li>
+                <li><a href=#Expertise>Jobs expertise</a></li>
+                <li><a href=#About>About me</a></li>
+                <li><a href=formulario.html>Contact me</a></li>
+            </ul></div>	
+        </nav>
+        <section>
+            <div class="es" style="display: inline;"><h1>Datos personales</h1>
+            <article>
+				<h2><a href=#Datosfi>Datos filiatorios</a></h2>
+				<dl id="Datosfi">
+					<dt>Nombre:</dt>
+						<dd>Juan</dd>
+					<dt>Apellidos:</dt>
+						<dd>Bustamante</dd>
+					<dt>Dirección:</dt>
+						<dd>La vía y Boulevard</dd>
+					<dt>Teléfono:</dt>
+						<dd>341 3413413</dd>
+					<dt>Correo electrónico:</dt>
+						<dd>algo@gmail.com</dd>
+				</dl>
+				<a class="iniciolink" href=#inicio>Ir a inicio</a>
+			</article>
+			<article>
+				<h2><a href=#Formacion>Formación académica</a></h2>
+				<dl id="Formacion">
+					<dt>Título:</dt>
+						<dd>Bachiller</dd>
+					<dt>Años:</dt>
+						<dd>2</dd>
+					<dt>En curso:</dt>
+						<dd>SI</dd>
+				</dl>
+				<dl>
+					<dt>Título:</dt>
+						<dd>Técnico superior en seguridad</dd>
+					<dt>Años:</dt>
+						<dd>3</dd>
+					<dt>En curso:</dt>
+						<dd>SI</dd>
+					<dt>Año cursado/finalizado:</dt>
+						<dd>2</dd>
+				</dl>
+				<a class="iniciolink" href=#inicio>Ir a inicio</a>
+			</article>
+            <article>
+				<h2><a href=#Experiencia>Experiencia laboral</a></h2>
+				<ol>
+					<li><dl id="Experiencia">
+						<dt>Puesto:</dt>
+							<dd>Plomero</dd>
+						<dt>Funciones:</dt>
+							<dd>Instalador</dd>
+						<dt>Empresa:</dt>
+							<dd>Contratista particular</dd>
+						<dt>Tiempo:</dt>
+							<dd>4 años</dd>
+					</dl></li>
+					<li><dl>
+						<dt>Puesto:</dt>
+							<dd>Técnico</dd>
+						<dt>Funciones:</dt>
+							<dd>Técnico</dd>
+						<dt>Empresa:</dt>
+							<dd>Análisis digital forense</dd>
+						<dt>Tiempo:</dt>
+							<dd>1 años</dd>
+					</dl></li>
+				</ol>
+				<a class="iniciolink" href=#inicio>Ir a inicio</a>
+			</article></div>
+            <aside>
+				<div class="es" style="display: inline;"><h4><a href=#Acercade>Sobre mí:</a></h4>
+				<p>Disponibilidad de incorporación: Sí</p>
+				<p>Vehículo propio: No</p>
+				<p><a id="Acercade" href="https:">Blog personal</a></p>
+				<a class="iniciolink" href=#inicio>Ir a inicio</a>
+			</aside>
+        </section>
+		<section>
+            <div class="en" style="display: none"><h1>Personal information</h1>
+            <article>
+				<h2><a href=#Datosfi>Personal data</a></h2>
+				<dl id="Data">
+					<dt>Name:</dt>
+						<dd>Juan</dd>
+					<dt>Lastname:</dt>
+						<dd>Bustamante</dd>
+					<dt>Adress:</dt>
+						<dd>La vía and Boulevard</dd>
+					<dt>Phone:</dt>
+						<dd>341 3413413</dd>
+					<dt>E-mail:</dt>
+						<dd>algo@gmail.com</dd>
+				</dl>
+				<a class="iniciolink" href=#inicio>Go to index</a>
+			</article>
+			<article>
+				<h2><a href=#Formation>Academic Knowledge</a></h2>
+				<dl id="Formation">
+					<dt>Degree:</dt>
+						<dd>Bachelor</dd>
+					<dt>Years:</dt>
+						<dd>2</dd>
+					<dt>On going:</dt>
+						<dd>Yes</dd>
+				</dl>
+				<dl>
+					<dt>Degree:</dt>
+						<dd>Senior Security Technician</dd>
+					<dt>Years:</dt>
+						<dd>3</dd>
+					<dt>On going:</dt>
+						<dd>Yes</dd>
+					<dt>Last years done:</dt>
+						<dd>2</dd>
+				</dl>
+				<a class="iniciolink" href=#inicio>Go to index</a>
+			</article>
+            <article>
+				<h2><a href=#Expertise>Jobs expertise</a></h2>
+				<ol>
+					<li><dl id="Expertise">
+						<dt>Position:</dt>
+							<dd>Plomber</dd>
+						<dt>Functions:</dt>
+							<dd>Installer Technician</dd>
+						<dt>Enterprise:</dt>
+							<dd>Private contractor</dd>
+						<dt>Time:</dt>
+							<dd>4 years</dd>
+					</dl></li>
+					<li><dl>
+						<dt>Position:</dt>
+							<dd>Technician</dd>
+						<dt>Functions:</dt>
+							<dd>Technician</dd>
+						<dt>Enterprise:</dt>
+							<dd>Forensic Digital Analysis</dd>
+						<dt>Time:</dt>
+							<dd>1 Year</dd>
+					</dl></li>
+				</ol>
+				<a class="iniciolink" href=#inicio>Go to index</a>
+			</article></div>
+            <aside>
+				<div class="en" style="display: none"><h4 ><a href=#Acercade>About me:</a></h4>
+				<p>Avaible: Yes</p>
+				<p>Own vehicle: No</p>
+				<p><a id="About" href="https:">Personal Blog</a></p>
+				<a class="iniciolink" href=#inicio>Go to index</a></div>
+			</aside>
+        </section>
+        <footer>
+			<a class="es iniciolink" href=#inicio>Ir a inicio</a>
+			<a class="en iniciolink" href=#inicio>Go to index</a>
+        </footer>
+    </body>
+</html>
+<style>
+	* {	
+		font-style: italic;
+		color: beige;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	body{
+		background-color: rgba(7, 7, 7, 0.822);
+	}
+    header {
+        background-image:url("pruebadcss.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        height: 20em;
+        object-position: right;
+		margin-bottom: 0%;
+    }
+	nav{
+		background-color: rgba(15, 32, 78, 0.822);
+		display: block;
+		margin-top: 0%;
+		padding: 1em;
+	}
+	nav div ul li{
+		border-style:groove;
+		display: inline;
+		padding: 0.5em;
+		font-size:larger;
+	}
+    .drop{
+        object-position: right;
+        width: 8em;
+        text-align:right; 
+        display:inline-block;
+        float:right;
+		margin-top: 1%;
+    }
+    .en{
+        display: none;
+    }
+    .es{
+        display: inline;
+    }
+    .menu{
+        background-color: cornflowerblue;
+        width: 8em;
+        margin:0%;
+        float: left;
+    }
+    .menu p{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .menu-item{
+        background-color: rgba(133, 171, 241, 0.808);
+        height: 6mm;
+        width: 8em;
+        margin:0%;
+        float: left;
+    }
+    .menu-item p{
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin: 0%;
+	}
+	section{
+		display: block;
+		width: 60%;
+		
+	}
+	section article dl{
+		margin-left: 2%;
+	}
+	dt{
+		float: left;
+		margin-left: 2%	;
+	}
+	aside{
+		position: absolute;
+  		top: 70%;
+		right: 5%;
+		width: 30%;
+		padding-bottom: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 15px;
+		background-color: rgba(15, 32, 78, 0.822);
+	}
+	aside div{
+		margin: 0%;
+	}
+	aside div p{
+		margin-left: 10%;
+	}
+	.iniciolink{
+		color:chartreuse;
+	}
+	.iniciolink:hover{
+		color:aqua;
+	}
+	footer{
+		display: block;
+		background-color: rgba(15, 32, 78, 0.822);
+		padding: 2.5%;
+	}
+</style>
+<script>
+	function dropListOfButtons() {
+		const buttonsList = document.getElementsByClassName('menu-item');
+		for (let i = 0; i < buttonsList.length; i++){
+			let a = buttonsList[i].style.visibility;    
+			if (a == 'hidden'){
+				buttonsList[i].style.visibility = 'visible';
+			}else{
+				buttonsList[i].style.visibility = 'hidden';
+			}
+		}
+	};
+	function lagnSwitcherES() {
+		const english = document.getElementsByClassName('en');
+		const español = document.getElementsByClassName('es');
+		for (let i = 0; i < español.length; i++){
+		español[i].style.display = 'inline';}
+		document.getElementById('init').setAttribute('lang', 'es');
+		for (let i = 0; i < english.length; i++){
+		english[i].style.display = 'none';}
+	};
+	function lagnSwitcherEN() {
+		const english = document.getElementsByClassName('en');
+		const español = document.getElementsByClassName('es');
+		for (let i = 0; i < español.length; i++){
+		español[i].style.display = 'none';}
+		document.getElementById('init').setAttribute('lang', 'en');
+		for (let i = 0; i < english.length; i++){
+		english[i].style.display = 'inline';}
+	};
+</script>

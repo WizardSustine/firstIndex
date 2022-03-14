@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html id="init" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">-->
+
+        <title>Contactame</title>
+    </head>
+    <body>
+        <header id="inicio">
+            <!---->
+            <div class="drop">
+                <button class="menu" onclick="dropListOfButtons()"> 
+                    <p class="es">Lenguaje</p>
+                    <p class="en">Language</p>
+                    <img src="arrow.png" style="width: 1em; float:right;">
+                </button>
+                <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherEN()">
+                    <p>English</p>
+                    <img src="United-Kingdom-flag.png" style="width: 1.7em; float:right;">
+                </button>
+                <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherES()">
+                    <p>Español</p>
+                    <img src="España-flag.png" style="width: 1.7em; float:right;">
+                </button>
+              </div>
+        </header>
+        <nav>
+            <div><ul class="es">
+                <li><a href=Index.html#Datosfi>Datos filiatorios</a></li>
+                <li><a href=Index.html#Formacion>Formación académica</a></li>
+                <li><a href=Index.html#Experiencia>Experiencia laboral</a></li>
+                <li><a href=Index.html#Acercade>Sobre mí</a></li>
+                <li><a href=formulario.html>Contactame:</a></li>
+			</ul>
+			<ul class="en">
+				<li><a href=Index.html#Data>Personal data</a></li>
+                <li><a href=Index.html#Knowledge>Academic Knowledge</a></li>
+                <li><a href=Index.html#Expertise>Jobs expertise</a></li>
+                <li><a href=Index.html#About>About me</a></li>
+                <li><a href=formulario.html>Contact me</a></li>
+            </ul></div>	
+        </nav>
+        <section>
+            <article class="es">
+                <form id="Contactame" action="">
+                    <label>Nombre:</label><input type="text" name="nombre" size="20"><input type="text" name="apellidos" size="20">
+                    <br>
+                    <label>E-mail:</label><input type="text" name="e-mail" size="20">
+                    <br>
+                    <label>Sexo:</label><input type="checkbox" name="hombre">Hombre<input type="checkbox" name="mujer">Mujer<br>
+                    <label>Fecha de nacimiento:</label>
+                    <select name="día[]" size="1" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="15">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="mes[]" size="1" >
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select name="año[]" size="1" >
+                        <option value="1">2019</option>
+                        <option value="2">2020</option>
+                        <option value="3">2021</option>
+                        <option value="4">2022</option>
+                    </select><br>
+                    <label class="aviso">La edad minima es de 14 años</label><br>
+                    <label>Contraseña:</label><input type="password" name="contraseña" size="20"><br>
+                    <label>Número de móvil:</label>
+                        <select name="prefijo-pais" size="1">
+                            <option value="1">+54Arg</option>
+                        </select>
+                        <input type="number" name="telefono" size="20"><br>
+                </form>
+            </article>
+            <article class="en">
+                <form id="Contact" action="">
+                    <label>Name:</label><input type="text" name="name" size="20"><input type="text" name="lastname" size="20">
+                    <br>
+                    <label>E-mail:</label><input type="text" name="email" size="20">
+                    <br>
+                    <label>Sex:</label><input type="checkbox" name="male">Male<input type="checkbox" name="male">Female<br>
+                    <label>Birhtday:</label>
+                    <select name="day[]" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="15">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="month[]" size="1">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select name="year[]" size="1">
+                        <option value="1">2019</option>
+                        <option value="2">2020</option>
+                        <option value="3">2021</option>
+                        <option value="4">2022</option>
+                    </select><br>
+                    <label class="aviso">The minimum age is 14 years old</label><br>
+                    <label>Password:</label><input type="password" name="password" size="20"><br>
+                    <label>Phone number:</label>
+                        <select name="prefijo-pais" size="1">
+                            <option value="1">+54Arg</option>
+                        </select>
+                        <input type="number" name="phone" size="20"><br>
+                </form>
+            </article>
+            <aside>
+                <div class="en" style="display: none"><h4 ><a href=#Acercade>About me:</a></h4>
+                <p>Avaible: Yes</p>
+                <p>Own vehicle: No</p>
+                <p><a id="About" href="https:">Personal Blog</a></p>
+                <a class="iniciolink" href=#inicio>Go to index</a></div>
+                <div class="es" style="display: inline;"><h4><a href=#Acercade>Sobre mí:</a></h4>
+                <p>Disponibilidad de incorporación: Sí</p>
+                <p>Vehículo propio: No</p>
+                <p><a id="Acercade" href="https:">Blog personal</a></p>
+                <a class="iniciolink" href=#inicio>Ir a inicio</a></div>
+            </aside>
+        </section>
+        <footer>
+			<a class="es iniciolink" href=#inicio>Ir a inicio</a>
+			<a class="en iniciolink" href=#inicio>Go to index</a>
+        </footer>
+    </body>
+</html>
+<style>
+    * {	
+		font-style: italic;
+		color: beige;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	body{
+		background-color: rgba(7, 7, 7, 0.822);
+	}
+    header {
+        background-image:url("pruebadcss.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        height: 20em;
+        object-position: right;
+		margin-bottom: 0%;
+    }
+	nav{
+		background-color: rgba(15, 32, 78, 0.822);
+		display: block;
+		margin-top: 0%;
+		padding: 1em;
+	}
+	nav div ul li{
+		border-style:groove;
+		display: inline;
+		padding: 0.5em;
+		font-size:larger;
+	}
+    .drop{
+        object-position: right;
+        width: 8em;
+        text-align:right; 
+        display:inline-block;
+        float:right;
+		margin-top: 1%;
+    }
+    .en{
+        display: none;
+    }
+    .es{
+        display: inline;
+    }
+    .menu{
+        background-color: cornflowerblue;
+        width: 8em;
+        margin:0%;
+        float: left;
+    }
+    .menu p{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .menu-item{
+        background-color: rgba(133, 171, 241, 0.808);
+        height: 6mm;
+        width: 8em;
+        margin:0%;
+        float: left;
+    }
+    .menu-item p{
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin: 0%;
+	}
+	section{
+		display: block;
+		width: 60%;
+		
+	}
+    section label{
+        display: inline-block;
+        margin: 2%;
+        text-align: right;
+        width: 30%;
+    }
+    .aviso{
+        position: relative;
+        left: 30%;
+        margin: 0%;
+        padding: 0%;
+        font-size: small;
+    }
+    section input{
+        background-color: rgba(15, 32, 78, 0.822);
+    }
+    section select{
+        background-color: rgba(15, 32, 78, 0.822);
+    }
+	section article dl{
+		margin-left: 2%;
+	}
+	dt{
+		float: left;
+		margin-left: 2%	;
+	}
+	aside{
+		position: absolute;
+  		top: 70%;
+		right: 5%;
+		width: 30%;
+		padding-bottom: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 15px;
+		background-color: rgba(15, 32, 78, 0.822);
+	}
+	aside div{
+		margin: 0%;
+	}
+	aside div p{
+		margin-left: 10%;
+	}
+	.iniciolink{
+		color:chartreuse;
+	}
+	.iniciolink:hover{
+		color:aqua;
+	}
+	footer{
+		display: block;
+		background-color: rgba(15, 32, 78, 0.822);
+		padding: 2.5%;
+	}
+</style>
+<script>
+	function dropListOfButtons() {
+		const buttonsList = document.getElementsByClassName('menu-item');
+		for (let i = 0; i < buttonsList.length; i++){
+			let a = buttonsList[i].style.visibility;    
+			if (a == 'hidden'){
+				buttonsList[i].style.visibility = 'visible';
+			}else{
+				buttonsList[i].style.visibility = 'hidden';
+			}
+		}
+	};
+	function lagnSwitcherES() {
+		const english = document.getElementsByClassName('en');
+		const español = document.getElementsByClassName('es');
+		for (let i = 0; i < español.length; i++){
+		español[i].style.display = 'inline';}
+		document.getElementById('init').setAttribute('lang', 'es');
+		for (let i = 0; i < english.length; i++){
+		english[i].style.display = 'none';}
+	};
+	function lagnSwitcherEN() {
+		const english = document.getElementsByClassName('en');
+		const español = document.getElementsByClassName('es');
+		for (let i = 0; i < español.length; i++){
+		español[i].style.display = 'none';}
+		document.getElementById('init').setAttribute('lang', 'en');
+		for (let i = 0; i < english.length; i++){
+		english[i].style.display = 'inline';}
+	};
+</script>
