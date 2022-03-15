@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">-->
-
         <title>Contactame</title>
     </head>
     <body>
@@ -14,15 +12,15 @@
                 <button class="menu" onclick="dropListOfButtons()"> 
                     <p class="es">Lenguaje</p>
                     <p class="en">Language</p>
-                    <img src="arrow.png" style="width: 1em; float:right;">
+                    <img src="img/arrow.png" style="width: 1em; float:right;">
                 </button>
                 <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherEN()">
                     <p>English</p>
-                    <img src="United-Kingdom-flag.png" style="width: 1.7em; float:right;">
+                    <img src="img/United-Kingdom-flag.png" style="width: 1.7em; float:right;">
                 </button>
                 <button class="menu-item" style="visibility: hidden;" onClick="lagnSwitcherES()">
                     <p>Español</p>
-                    <img src="España-flag.png" style="width: 1.7em; float:right;">
+                    <img src="img/España-flag.png" style="width: 1.7em; float:right;">
                 </button>
               </div>
         </header>
@@ -44,7 +42,7 @@
         </nav>
         <section>
             <article class="es">
-                <form id="Contactame" action="">
+                <form id="Contactame" action="mailto:bustamante.juan1990@gmail.com?subject=formulario de pagina" method="post" enctype="text/plain">
                     <label>Nombre:</label><input type="text" name="nombre" size="20"><input type="text" name="apellidos" size="20">
                     <br>
                     <label>E-mail:</label><input type="text" name="e-mail" size="20">
@@ -110,11 +108,14 @@
                         <select name="prefijo-pais" size="1">
                             <option value="1">+54Arg</option>
                         </select>
-                        <input type="number" name="telefono" size="20"><br>
+                    <input type="number" name="telefono" size="20"><br>
+                    <input type="checkbox" name="Condiciones" style="margin-left: 10%;">Acepta las <a style="color:rgb(8, 165, 238)" href="docs/Condiciones_de_uso.txt">Condiciones de uso</a> y la <a style="color:rgb(8, 165, 238)" href="docs/Politica_de_privacidad.txt">Politica de privacidad</a> de este Curriculum y que mi persona te envíe comunicaciones, incluso por vía electrónica. Lee un resumen en el <a style="color:rgb(8, 165, 238)" href="docs/Decalogo_condiciones_de_uso.txt">Decalogo condiciones de uso</a><br>
+                    <br>
+                    <input type="submit" value="¡Disfruta mi Curriculum!" style="position:relative; padding: 1%; margin: 1%; left:65%;font-size: large;">
                 </form>
             </article>
             <article class="en">
-                <form id="Contact" action="">
+                <form id="Contact" action="mailto:bustamante.juan1990@gmail.com?subject=formulario de pagina" method="post" enctype="text/plain">
                     <label>Name:</label><input type="text" name="name" size="20"><input type="text" name="lastname" size="20">
                     <br>
                     <label>E-mail:</label><input type="text" name="email" size="20">
@@ -180,7 +181,10 @@
                         <select name="prefijo-pais" size="1">
                             <option value="1">+54Arg</option>
                         </select>
-                        <input type="number" name="phone" size="20"><br>
+                    <input type="number" name="phone" size="20"><br>
+                    <input type="checkbox" name="Condiciones" style="margin-left: 10%;">Agree to the terms of <a style="color:rgb(8, 165, 238)" href="docs/Condiciones_de_uso.txt">Use conditions</a> and the <a style="color:rgb(8, 165, 238)" href="docs/Politica_de_privacidad.txt">Privacy police</a> from this resume and for me to send you news, even through e-mails. Read a resume of my<a style="color:rgb(8, 165, 238)" href="docs/Decalogo_condiciones_de_uso.txt">Decalogue conditions of use</a><br>
+                    <br>
+                    <input type="submit" value="¡Enjoy my resume!" style="position:relative; padding: 1%; margin: 1%; left:65%;font-size: large;">
                 </form>
             </article>
             <aside>
@@ -214,7 +218,7 @@
 		background-color: rgba(7, 7, 7, 0.822);
 	}
     header {
-        background-image:url("pruebadcss.jpg");
+        background-image:url("img/pruebadcss.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
